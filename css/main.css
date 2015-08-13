@@ -1,0 +1,102 @@
+/*
+
+green: #A6CE39;
+blue: #338caf;
+
+*/
+
+
+body{
+    font-family: Roboto;
+}
+
+
+/* Main menu */
+
+#main-menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    z-index: 100;
+}
+
+#main-menu ul{
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-top: 10px;
+}
+
+#main-menu ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#main-menu ul li a{
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#main-menu ul li a:hover{
+    color: #A6CE39;
+}
+
+
+/* Main Layout*/
+
+.overlay{
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;  
+    z-index: -1;
+}
+
+
+/* What */
+
+.what{
+    background: url('../img/main-bg-old.jpg') center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;    
+    text-align: center;
+    text-align: center;
+}
+
+.what h1{
+    color: #A6CE39;
+    font-size: 160px;
+    z-index: 1;
+    line-height: 100px;
+    font-weight: 700;
+    margin: 0 auto;
+    background: url('../img/orcid-logo.png');    
+    height: 138px;
+    width: 460px;
+    background-repeat: no-repeat;
+    text-indent: -99999;
+
+
+}
+
+.what h2 span.event{
+    font-size: 59px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 300;
+
+}
+
+
+.what h2 span.place{
+    font-size: 59px;
+    color: #338CAF;
+    text-transform: uppercase;
+    font-weight: 400;
+}
