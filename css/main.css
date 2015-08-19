@@ -61,6 +61,25 @@ strong{
     margin-right: 15px;
 }
 
+#main-menu ul li.register-button{
+    background: #e47d00;
+}
+
+#main-menu ul li.register-button a{    
+    color: #FFF;
+    border: 1px solid #e47d00;
+    padding: 5px 15px;
+    display: block;
+}
+
+#main-menu ul li.register-button:hover{
+    background: #FFF;
+}
+
+#main-menu ul li.register-button a:hover{
+    color: #e47d00;
+}
+
 #main-menu ul li a{
     color: #338caf;
     text-transform: uppercase;
@@ -71,6 +90,8 @@ strong{
 #main-menu ul li a:hover{
     color: #A6CE39;    
 }
+
+
 
 
 /* Main Layout*/
@@ -127,20 +148,39 @@ strong{
 
 }
 
-.what h2 span.event{
+.what h2{
+    padding: 0;
+    margin: 0;
     font-size: 59px;
-    color: #A6CE39;
     text-transform: uppercase;
-    font-weight: 300;
-
+    line-height: 53px;
+    margin-top: 15px;
 }
 
+.what h2.event{
+    color: #A6CE39;
+    font-weight: 300;    
+}
 
-.what h2 span.place{
-    font-size: 59px;
-    color: #338CAF;
-    text-transform: uppercase;
-    font-weight: 400px;
+.what h2.place{    
+    color: #338CAF;    
+    font-weight: 400;
+    line-height: 53px;
+    vertical-align: top;
+}
+
+.what .conference{
+    display: block;
+    margin-top: 30px;
+}
+
+.what .conference a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.what .conference a:hover{
+    color: #A6CE39;
 }
 
 
