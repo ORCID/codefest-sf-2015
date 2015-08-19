@@ -7,7 +7,7 @@ $(document).ready(function() {
         anchors: [],
         scrollingSpeed: 700,
         easing: 'swing',
-        loopBottom: false,
+        loopBottom: true,
         loopTop: false,
         css3: true,
         navigation: {
@@ -24,15 +24,23 @@ $(document).ready(function() {
         animateAnchor: false,
 
         //events
-        onLeave: function(index, nextIndex, direction){},
-        afterLoad: function(anchorLink, index){},
+        onLeave: function(index, nextIndex, direction){
+
+        },
+        afterLoad: function(anchorLink, index){
+            $(".menu-trigger").removeClass('active-menu');
+            $("#main-menu").find("[data-section='" + index + "']").addClass('active-menu');
+        },
         afterRender: function(){},
     });
 
     $('.menu-trigger').click(function(e){
-        e.preventDefault();
+        e.preventDefault();        
         var next = $(this).attr("data-section");
+        $(".menu-trigger").removeClass('active-menu');
+        $(this).addClass('active-menu');
         $.fn.pagepiling.moveTo(next);
+
     });
 
     //MAP
