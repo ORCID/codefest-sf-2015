@@ -2,12 +2,14 @@
 
 green: #A6CE39;
 blue: #338caf;
+grey: #939598;
 
 */
 
 
 body{
     font-family: Roboto;
+    font-size: 20px;
 }
 
 table{
@@ -20,8 +22,21 @@ a{
 
 a:hover{
     color: #A6CE39;
+    text-decoration: none;
 }
 
+h2{
+    font-size: 40px;
+    color: #A6CE39;
+}
+
+th{
+    color: #338caf;
+}
+
+strong{
+    color: #939598;
+}
 
 /* Main menu */
 
@@ -54,7 +69,7 @@ a:hover{
 }
 
 #main-menu ul li a:hover{
-    color: #A6CE39;
+    color: #A6CE39;    
 }
 
 
@@ -77,11 +92,18 @@ a:hover{
     color: #939598;
 }
 
+.active-menu{
+    color: #A6CE39 !important;
+    font-weight: bold;
+    border-bottom: 1px dotted #A6CE39;
+    padding-bottom: 3px; 
+}
+
 
 /* What */
 
 .what{
-    background: url('../img/main-bg-old.jpg') center center;
+    background: url('../img/san-francisco-bridge.jpg') center center;
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -118,7 +140,7 @@ a:hover{
     font-size: 59px;
     color: #338CAF;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 400px;
 }
 
 
@@ -130,12 +152,14 @@ a:hover{
 
 .when .dates .date{
     border-radius: 5px;
+    border: 1px solid #ddd;
     width: 150px;
     height: 150px;
     box-shadow: 3px 3px 5px #888;
     margin: 0 15px;
     float: left;
     padding: 5px;
+    background: #FFF;
 }
 
 .when .dates .date .month{
@@ -160,3 +184,28 @@ a:hover{
 .when .schedule{
     margin-top: 30px;
 }
+
+.why{
+    background: url('../img/san-francisco-beach.jpg') center center no-repeat;
+    background-size: cover;    
+}
+
+.why p,
+.why li{
+    color: #FFF;
+}
+
+.why strong{
+    color: #338caf;
+}
+
+.resources{
+    background: url('../img/san-francisco-bridge-2.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.resources p,
+.resources li{
+    color: #FFF;
+}
+
