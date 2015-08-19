@@ -14,7 +14,7 @@ $(document).ready(function() {
             'textColor': '#338caf',
             'bulletsColor': '#338caf',
             'position': 'right',
-            'tooltips': ['What', 'When', 'Where', 'Why', 'Who', 'Resources']
+            'tooltips': []
         },
         normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,
@@ -24,9 +24,7 @@ $(document).ready(function() {
         animateAnchor: false,
 
         //events
-        onLeave: function(index, nextIndex, direction){
-
-        },
+        onLeave: function(index, nextIndex, direction){},
         afterLoad: function(anchorLink, index){
             $(".menu-trigger").removeClass('active-menu');
             $("#main-menu").find("[data-section='" + index + "']").addClass('active-menu');
