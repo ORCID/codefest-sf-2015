@@ -65,7 +65,7 @@ strong{
     background: #e47d00;
 }
 
-#main-menu ul li.register-button a{    
+#main-menu ul li.register-button a{
     color: #FFF;
     border: 1px solid #e47d00;
     padding: 5px 15px;
@@ -88,7 +88,7 @@ strong{
 }
 
 #main-menu ul li a:hover{
-    color: #A6CE39;    
+    color: #A6CE39;
 }
 
 
@@ -117,7 +117,7 @@ strong{
     color: #A6CE39 !important;
     font-weight: bold;
     border-bottom: 1px dotted #A6CE39;
-    padding-bottom: 3px; 
+    padding-bottom: 3px;
 }
 
 
@@ -130,6 +130,10 @@ strong{
     width: 100%;
     text-align: center;
     text-align: center;
+}
+
+.what .middle{
+    display: none;
 }
 
 .what h1{
@@ -159,11 +163,11 @@ strong{
 
 .what h2.event{
     color: #A6CE39;
-    font-weight: 300;    
+    font-weight: 300;
 }
 
-.what h2.place{    
-    color: #338CAF;    
+.what h2.place{
+    color: #338CAF;
     font-weight: 400;
     line-height: 53px;
     vertical-align: top;
@@ -227,7 +231,7 @@ strong{
 
 .why{
     background: url('../img/san-francisco-beach.jpg') center center no-repeat;
-    background-size: cover;    
+    background-size: cover;
 }
 
 .why p,
@@ -248,4 +252,3 @@ strong{
 .resources li{
     color: #FFF;
 }
-

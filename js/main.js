@@ -33,7 +33,7 @@ $(document).ready(function() {
     });
 
     $('.menu-trigger').click(function(e){
-        e.preventDefault();        
+        e.preventDefault();
         var next = $(this).attr("data-section");
         $(".menu-trigger").removeClass('active-menu');
         $(this).addClass('active-menu');
@@ -70,6 +70,9 @@ $(document).ready(function() {
     });
 
     infowindow.open(map, marker1);
+
+    $('.what .middle').css('display', 'block');
+    $('.what .middle').addClass('animated fadeIn');
 
 
 
